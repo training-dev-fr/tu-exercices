@@ -1,4 +1,4 @@
-export default function countVowels(word){
+function countVowels(word){
     if(typeof word !== 'string'){
       throw new Error("Argument must be a string");
     }
@@ -10,3 +10,5 @@ export default function countVowels(word){
     }
     return count;
   }
+
+  module.exports = {countVowels}

@@ -1,4 +1,4 @@
-export default function mergeAndSortNumberArrays(array1,array2){
+function mergeAndSortNumberArrays(array1,array2){
     if(!Array.isArray(array1) || !Array.isArray(array2)){
       throw new Error("Arguments must be both array");
     }
@@ -16,3 +16,5 @@ export default function mergeAndSortNumberArrays(array1,array2){
     resultArray .sort();
     return resultArray ;
   }
+
+  module.exports = {mergeAndSortNumberArrays}

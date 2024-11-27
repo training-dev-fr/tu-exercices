@@ -1,4 +1,4 @@
-export default function max(a,b){
+function max(a,b){
     if (typeof a !== 'number' || typeof b !== 'number') {
         throw new Error('Both arguments must be numbers');
     }
@@ -10,3 +10,5 @@ export default function max(a,b){
       return a;
     }
 }
+
+module.exports = {max}
